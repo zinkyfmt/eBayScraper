@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Static Website | <%= page %></title>
+	<meta charset="utf-8">
+	<meta name="active-menu" content="<%= menuId %>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+
+<div class="container-fluid bg-3">
+  <div><h1 class="logo">eBay Scraper Website</h1></div>
+  <h3>Select vendor</h3>
+  <div class="row">
+      <div class="input-group mb-3">
+      <select class="form-control" id="vendor_name">
+          <option value="brandstreet.tokyo">brandstreet.tokyo</option>
+        </select>
+    </div>
+  </div>
+  <h3>Input URLs</h3>
+  <div class="row" id='urlBox'>
+    <div class="input-group mb-3 url-wrapper" id="urlWrapper1">
+      <label>Enter one url per line</label>
+        <textarea type="text" class="form-control textbox-url" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter one url per line"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    	<button type="button" class="btn btn-primary" id="submit">Submit</button>
+<!--       <button type="button" class="btn btn-success btn-image" id="add-more">Add more url</button> -->
+<!--       <button type="button" class="btn btn-success btn-image" id="remove" disabled="disabled">Remove latest url</button> -->
+    </div>
+  <div class="row" id="ajax-loading" style="display: none;">
+  	Fetching data...
+  </div>
+  <div class="row" id="detail-list"></div>
+</div>
+<div id="overlay">
+  <div class="cv-spinner">
+    <span class="spinner"></span>
+  </div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.1.0/jszip-utils.min.js"></script>
+<script src="./javascripts/script.js"></script>
+<script src="./javascripts/jszip.min.js"></script>
+<script src="./javascripts/FileSaver.min.js"></script>
+</html>

@@ -1,0 +1,119 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.container-fluid {
+	width: 1024px;
+  padding: 0;
+}
+.input-group {
+	margin: 10px 0;
+}
+.mb-3 {
+	width: 100%;
+}
+.row {
+	margin: 10px 0;
+}
+td {
+	padding: 5px;
+}
+.image-div img {
+	margin: 10px 20px;
+}
+.btn-image {
+	margin-left: 10px;
+}
+.logo {
+    text-align: center;
+    color: #ccc;
+}
+.textbox-url {
+	height: 150px !important;
+  overflow: scroll
+}
+
+#result {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#result td, #result th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#result tr:nth-child(even){background-color: #f2f2f2;}
+
+#result thead tr th {
+  background-color: #337ab7;
+  color: white;
+}
+#result tbody tr th{
+  font-size: 12px;
+  font-weight: 500; 
+}
+#result tbody tr:hover {background-color: #eaeaea;}
+
+#result th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+#result th.column-lot {
+	width: 50px;
+	text-align: center;
+}
+#result th.column-url {
+	width: 30%;
+}
+#result th.column-description {
+  width: 20%;
+}
+#result th.column-price {
+  text-align: center;
+  min-width: 80px;
+}
+#image-show {
+  display: none;
+}
+.btn-download {
+  margin: 10px 0;
+}
+#overlay{ 
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height:100%;
+  display: none;
+  background: rgba(0,0,0,0.6);
+}
+.cv-spinner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px #ddd solid;
+  border-top: 4px #2e93e6 solid;
+  border-radius: 50%;
+  animation: sp-anime 0.8s infinite linear;
+}
+@keyframes sp-anime {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(359deg); 
+  }
+}
+.is-hide{
+  display:none;
+}
