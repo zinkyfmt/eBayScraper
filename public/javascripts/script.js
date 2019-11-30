@@ -124,7 +124,9 @@ $(function() {
 	  				wrapperDiv += '</div>';
 		  			//let keys = Array.from( object.keys() );
 	  			}
-	  			wrapperDiv += '<p><button class="btn btn-primary download"> Download all images</button></p>';
+	  			if (result.length > 0) {
+	  				wrapperDiv += '<p><button class="btn btn-primary download"> Download all images</button></p>';
+	  			}
 	  			$('#detail-list').html(wrapperDiv);
 		    }
 	  	});
